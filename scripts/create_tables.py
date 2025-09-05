@@ -26,7 +26,7 @@ def main():
         bigquery.SchemaField("name", "STRING"),
         bigquery.SchemaField("current_price", "FLOAT64"),
         bigquery.SchemaField("market_cap", "FLOAT64"),
-        bigquery.SchemaField("price_change_percentage_24th", "FLOAT64"),
+        bigquery.SchemaField("price_change_percentage_24h", "FLOAT64"),
         bigquery.SchemaField("last_updated", "TIMESTAMP"),
         bigquery.SchemaField("fetched_at", "TIMESTAMP"),
     ]

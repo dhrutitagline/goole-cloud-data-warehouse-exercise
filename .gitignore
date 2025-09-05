@@ -1,4 +1,4 @@
-*.yaml
+config.yaml
 *.json
 env/
 __pycache__/

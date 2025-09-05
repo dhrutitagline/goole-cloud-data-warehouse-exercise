@@ -13,7 +13,7 @@ def get_staging_schema():
         bigquery.SchemaField("crypto_name", "STRING"),
         bigquery.SchemaField("current_price", "FLOAT64"),
         bigquery.SchemaField("market_cap", "FLOAT64"),
-        bigquery.SchemaField("price_change_percentage_24th", "FLOAT64"),
+        bigquery.SchemaField("price_change_percentage_24h", "FLOAT64"),
         bigquery.SchemaField("last_updated", "TIMESTAMP"),
         bigquery.SchemaField("fetched_at", "TIMESTAMP"),
     ]
@@ -45,7 +45,7 @@ def populate_staging_table_incremental(client, staging_table_id, raw_users_table
         c.name AS crypto_name,
         c.current_price,
         c.market_cap,
-        c.price_change_percentage_24th,
+        c.price_change_percentage_24h,
         c.last_updated,
         c.fetched_at
     FROM `{raw_users_table}` u

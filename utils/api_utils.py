@@ -30,7 +30,7 @@ def fetch_crypto_data():
             "name": item["name"],
             "current_price": item.get("current_price"),
             "market_cap": item.get("market_cap"),
-            "price_change_percentage_24th": item.get("price_change_percentage_24h"),
+            "price_change_percentage_24h": item.get("price_change_percentage_24h"),
             "last_updated": item.get("last_updated"),
             "fetched_at": fetched_at
         })

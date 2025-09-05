@@ -1,0 +1,16 @@
+gcp:
+  project_id: data-pipeline-demo
+  dataset: raw_data
+  credentials: config/credentials.json
+
+postgres:
+  host: localhost
+  port: 5432
+  dbname: your_db
+  user: your_user
+  password: your_password
+
+tables:
+  raw_users: raw_users_table
+  raw_crypto: raw_crypto_table
+  staging: staging_users_crypto_table
