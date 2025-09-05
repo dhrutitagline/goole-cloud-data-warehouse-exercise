@@ -17,7 +17,7 @@ Python → ETL pipeline scripts
 project/
 │── config/
 │   ├── config.yaml        # Pipeline configuration
-│   ├── bq_key.json        # GCP credentials (NOT in git)
+│   ├── credentials.json        # GCP credentials (NOT in git)
 │
 │── scripts/
 │   ├── create_tables.py   # Creates BigQuery raw tables
@@ -72,7 +72,7 @@ project/
    - **Name**: `bigquery-etl`
    - **Role**: `BigQuery Admin` (or minimally `BigQuery Data Editor`)
 3. After creation, click **Keys → Add Key → JSON**.
-4. Download the JSON file → place it inside `config/credentials.json`.
+4. Download the JSON file → place it inside `config` folder.
 
 #### Update config.yaml
 1. Copy the example config:
