@@ -14,12 +14,12 @@ def main():
     raw_users_table = f"{project}.{dataset}.{config['tables']['raw_users']}"
     raw_crypto_table = f"{project}.{dataset}.{config['tables']['raw_crypto']}"
 
-    # 1️⃣ Create staging table
+    # Create staging table
     schema = get_staging_schema()
     create_table_if_not_exists(client, staging_table_id, schema)
     print("Staging table created!")
 
-    # 2️⃣ Populate staging table
+    # Populate staging table
     populate_staging_table_incremental(client, staging_table_id, raw_users_table, raw_crypto_table)
     print("Staging table populated successfully!")
 

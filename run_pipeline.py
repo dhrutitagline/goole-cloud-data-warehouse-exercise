@@ -4,7 +4,7 @@ from scripts.staging_users_crypto import main as load_staging
 from scripts.create_tables import main as create_tables
 
 def run_pipeline():
-    print("🚀 Starting pipeline...")
+    print("Starting pipeline...")
 
     create_tables()
 
@@ -17,7 +17,7 @@ def run_pipeline():
     # Step 3: Transformations (Staging)
     load_staging()
 
-    print("✅ Pipeline finished successfully!")
+    print("Pipeline finished successfully!")
 
 if __name__ == "__main__":
     run_pipeline()
