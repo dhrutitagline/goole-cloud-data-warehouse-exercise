@@ -24,5 +24,5 @@
 
 Run it with:
 ```bash
-python3 scripts/run_pipeline.py
+python3 run_pipeline.py
 ```
