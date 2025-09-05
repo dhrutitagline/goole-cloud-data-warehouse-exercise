@@ -37,6 +37,13 @@ project/
 
 ##  Setup Instructions
 
+#### Step 0: Prepare Postgres
+
+1. Install Postgres locally (or use a hosted Postgres instance).
+2. Create a database
+3. Create the table
+4. Insert some sample data
+
 ### Step 1: Create a Google Cloud Project
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
 2. At the top, click **Select Project → New Project**.
@@ -66,6 +73,14 @@ project/
    - **Role**: `BigQuery Admin` (or minimally `BigQuery Data Editor`)
 3. After creation, click **Keys → Add Key → JSON**.
 4. Download the JSON file → place it inside `config/credentials.json`.
+
+#### Update config.yaml
+1. Copy the example config:
+```bash
+cp config/example_config.yaml config/config.yaml
+```
+
+2. Then update config/config.yaml with your Postgres credentials and GCP settings
 
 
 ## How It Works
